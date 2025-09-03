@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react"
 import { useParams } from "react-router-dom";
 import productDetails from "../data/ProductsData";
 import "./Products.css";
@@ -8,6 +8,10 @@ import { FaInstagram, FaYoutube, FaWhatsapp, FaPhone } from "react-icons/fa";
 const Products = () => {
   const { productId } = useParams();
   const product = productDetails[productId];
+
+  useEffect(() => {
+    document.title = "Products | Aarogya Kadapa"
+  }, [])
 
   return (
     <div className="product-container">

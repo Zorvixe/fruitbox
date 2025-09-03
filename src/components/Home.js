@@ -1,4 +1,4 @@
-import React from 'react'
+import { useEffect } from "react"
 import Carousel from 'react-bootstrap/Carousel'
 import { Link } from 'react-router-dom'
 import logoImg from '../assets/logoimg.png';
@@ -12,6 +12,9 @@ import fullBoxImg from "../assets/fullbox.jpg";
 import './Home.css'
 
 const Home = () => {
+  useEffect(() => {
+    document.title = "Home | Aarogya Kadapa"
+  }, [])
   return (
     <div className='home-container'>
       <Carousel data-bs-theme="dark">

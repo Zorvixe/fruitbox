@@ -1,7 +1,10 @@
-import React from 'react'
+import { useEffect } from "react"
 import './About.css'
 import aboutImg from '../../assets/about.jpg'
 const About = () => {
+  useEffect(() => {
+    document.title = "About Us | Aarogya Kadapa"
+  }, [])
   return (
     <div className='about-container'>
       <img src = {aboutImg} alt = "aboutImage"/>

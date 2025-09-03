@@ -1,4 +1,4 @@
-import React from "react"; 
+import { useEffect } from "react"
 import { Link } from "react-router-dom";
 import { FaPhone } from "react-icons/fa";
 import productDetails from "../data/ProductsData";
@@ -9,6 +9,10 @@ import "./Plans.css";
 
 const Plans = () => {
   const plans = ["weeklyPlan", "monthlyPlan"];
+
+  useEffect(() => {
+    document.title = "Plans | Aarogya Kadapa"
+  }, [])
 
   return (
     <div className="plans-container">
