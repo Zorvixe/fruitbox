@@ -64,7 +64,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} FruitBox. All Rights Reserved. Designed, Developed & Maintained by Zorvixe Technologies</p>
+        <p>© {new Date().getFullYear()} <a href='/'>AarogyaBox</a>. All Rights Reserved. Designed, Developed & Maintained by <a href='https://www.zorvixetechnologies.com'>Zorvixe Technologies</a></p>
       </div>
     </footer>
   )
