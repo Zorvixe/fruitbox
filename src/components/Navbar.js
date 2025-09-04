@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import logoImg from '../assets/logoimg.png';
+import logoImg from '../assets/fruitbox_logo.png';
 import './Navbar.css';
 
 const Navbar = ({ cartCount }) => {
@@ -32,7 +32,7 @@ const Navbar = ({ cartCount }) => {
           <Link to="/" className="logo-link">
             <img src={logoImg} alt="logo" />
           </Link>
-          <h1>Fruit Box</h1>
+           <h1 className='mt-2'>Fruit Box</h1>
         </div>
 
         <div className={`menu ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
