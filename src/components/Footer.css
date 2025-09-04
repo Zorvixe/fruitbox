@@ -129,6 +129,10 @@
   font-size: 14px;
 }
 
+.sitename {
+  color: #f97316;
+}
+
 @media (max-width: 480px) {
   .footer-content {
     flex-direction: column;      
